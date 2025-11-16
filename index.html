@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>FEEL BEAUTY PB — Pedidos</title>
+<meta name="description" content="FEEL BEAUTY PB — maquiagem e skincare. Entregas em Areia e região (mediante consulta). Encaminhe seus pedidos pelo WhatsApp.">
+
+<!-- ÍCONES FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root {
+    --rosa-claro: #fff7fb;
+    --rosa-medio: #ffe4ec;
+    --rosa-forte: #e91e63;
+    --texto: #663344;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(180deg, var(--rosa-claro), var(--rosa-medio));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--texto);
+    padding: 20px;
+  }
+
+  .container {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+    padding: 0 0 24px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* === SEÇÃO SUPERIOR COM FUNDO === */
+  .topo {
+    background-image: url("assets/fundo_feel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+  }
+
+  .topo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 51, 68, 0.55);
+  }
+
+  .topo h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #7a4b5a;
+    margin: 24px 0;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+
+  .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 18px;
+    margin: 0 auto 14px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 85%;
+  }
+
+  .botao.whatsapp {
+    background: linear-gradient(90deg, #25d366, #20b358);
+    color: white;
+    font-size: 1.1rem;
+    padding: 18px;
+    box-shadow: 0 6px 16px rgba(32,179,88,0.3);
+  }
+
+  .botao.whatsapp:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(32,179,88,0.4);
+  }
+
+  .botao.whatsapp i {
+    font-size: 1.4rem;
+  }
+
+  .botao.catalogo {
+    background: linear-gradient(90deg, #ffe0ec, #ffd4e4);
+    color: var(--texto);
+    border: 1px solid rgba(233,30,99,0.2);
+  }
+
+  .botao.grupo {
+    background: #f3f3f3;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #844b5a;
+    line-height: 1.4;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  .links a {
+    color: var(--rosa-forte);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 0 20px 0;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+    .topo h1 {
+      font-size: 1.3rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="topo">
+      <img src="assets/logo_feel.jpg" alt="Logo FEEL BEAUTY PB" class="logo">
+      <h1>FEEL BEAUTY PB 💄</h1>
+    </div>
+
+    <p>Maquiagens e skincare com amor! 💕<br>
+    Entregas em <strong>Areia e Região</strong> (mediante consulta).</p>
+
+    <a href="https://wa.me/5583996374549?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20FEEL%20BEAUTY%20PB%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+       class="botao whatsapp" target="_blank">
+       <i class="fa-brands fa-whatsapp"></i> Fazer Pedido Agora
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/15f8iGzPQf2rvbzLhtG0MxtmuBaB7JLfI?usp=drive_link" class="botao catalogo" id="catalogo-link">
+      📦 Ver Catálogo (Drive)
+    </a>
+
+    <a href="#" class="botao grupo">
+      👥 Grupo Exclusivo (em breve)
+    </a>
+
+    <footer>
+      <div>📍 Rua Manoel da Silva, 331 — Centro, Areia-PB</div>
+      <div class="links">
+        <a href="https://www.instagram.com/feelbeautypb" target="_blank">@feelbeautypb</a> • 
+        <a href="https://www.google.com/maps/search/Rua+Manoel+da+Silva,+331,+Centro,+Areia+-+PB" target="_blank">Localização</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("catalogo-link").addEventListener("click", function(e) {
+      if (this.getAttribute("href") === "#") {
+        e.preventDefault();
+        alert("O link do catálogo ainda não foi adicionado. Substitua o '#' pelo link do seu Drive quando estiver pronto.");
+      }
+    });
+  </script>
+</body>
+</html>
+
